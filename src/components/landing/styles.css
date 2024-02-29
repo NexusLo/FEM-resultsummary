@@ -1,0 +1,512 @@
+/*
+### Primary
+
+- Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%)
+
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27%)
+*/
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "hankengrotesk";
+    src: url(../../assets/fonts/static/HankenGrotesk-Medium.ttf) ;
+    }
+.wrapper{
+    background-color: black;
+    width: 100vw;
+    height:100vh;
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+.main-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'hankengrotesk';
+}
+.card-div{
+    width: 75%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.left-div{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-radius: 0 0px 40px 40px ;  
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    width: 100%;
+    height: 75%;
+    color: #D4C3FF;
+}
+.circle-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px; 
+    width: 135px;
+    height: 135px;
+    border-radius: 67.5px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0))
+}
+.left-headtitle{
+    font-size: 1.1rem;
+    margin: 20px 0 25px 0;
+}
+.left-title{
+    font-size: 3rem;
+    color: white;
+    
+}
+.left-subtitle{
+    color: white;
+    margin-top: 20px;
+}
+
+.center-txt{
+    text-align: center;
+}
+
+.left-txt{
+    width: 75%;
+    margin-top: 10px;
+}
+
+
+.right-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    color: #D4C3FF;
+}
+.summary-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.right-title{
+    color: #36394A;
+    font-size: 1.1rem;
+    margin: 25px 0 25px 0;
+    text-align: left;
+}
+.left{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 70px;
+}
+.detail-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: 58px;
+    margin-bottom: 15px;
+}
+.icon-margin{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.item{
+    display: flex;
+    width: 57%;
+    justify-content: flex-start;
+}
+.color{
+    color: #36394A;
+}
+
+.reaction{
+    background-color: hsla(0, 100%, 67%, 0.06);
+    color: hsl(0, 100%, 67%);
+}
+.memory{
+    background-color: hsla(39, 100%, 56%, 0.06);
+    color: hsl(39, 100%, 56%);
+}
+.verbal{
+    background-color: hsla(166, 100%, 37%, 0.06);
+    color: hsl(166, 100%, 37%);
+}
+.visual{
+    background-color: hsl(234, 85%, 45%, 0.06);
+    color: hsla(234, 85%, 45%);
+}
+.continue-btn{
+    background-color: #343C49;
+    color: white;
+    font-family: 'hankengrotesk';
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 10px;
+    width: 75%;
+    border-radius: 25px;
+}
+
+@media (min-width: 600px) {
+    .wrapper {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:auto
+    }
+    .item{
+        display: flex;
+        width: 59%;
+        justify-content: flex-start;
+
+    }
+}
+@media (min-width: 760px) {
+    .wrapper {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:auto
+    }
+    .item{
+        display: flex;
+        width: 62%;
+        justify-content: flex-start;
+
+    }
+}
+@media (min-width: 1025px) {
+    .wrapper {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:auto
+    }
+    
+    .main-div {
+        background-color: white;
+        width: 85%;
+        height: 90%;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        margin: auto;
+        box-shadow: 2px 5px 30px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .card-div {
+        background-color: white;
+        width: 53%;
+        height: 53%;
+        border-radius: 40px 40px 40px 40px; 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 60px 2px  hsla(221, 100%, 96%, 1);
+         
+    }
+    .left-div{  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+        border-radius: 40px 40px 40px 40px ;  
+        background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+        width: 100%;
+        height: 100%;
+        color: #D4C3FF;
+    }
+    .circle-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px; 
+        width: 160px;
+        height: 160px;
+        border-radius: 80px;
+        background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0))
+    }
+
+.left-headtitle{
+    font-size: 1.1rem;
+    margin: 20px 0 25px 0;
+}
+.left-title{
+    font-size: 3rem;
+    color: white;
+    
+}
+.left-subtitle{
+    color: white;
+    margin-top: 30px;
+}
+
+.center-txt{
+    text-align: center;
+}
+
+.left-txt{
+    width: 75%;
+    margin-top: 15px;
+}
+
+
+.right-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+     color: #D4C3FF;
+    border-radius: 40px 40px 40px 40px; 
+    }
+
+.summary-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.right-title{
+    color: #36394A;
+    font-size: 1.2rem;
+    margin: 40px 0 25px 0;
+    text-align: left;
+    font-weight: 800;
+}
+
+.left{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 70px;
+}
+.detail-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.icon-margin{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.item{
+    display: flex;
+    width: 40%;
+    justify-content: flex-start;
+}
+
+.reaction{
+    background-color: hsla(0, 100%, 67%, 0.06);
+    color: hsl(0, 100%, 67%);
+}
+.memory{
+    background-color: hsla(39, 100%, 56%, 0.06);
+    color: hsl(39, 100%, 56%);
+}
+.verbal{
+    background-color: hsla(166, 100%, 37%, 0.06);
+    color: hsl(166, 100%, 37%);
+}
+.visual{
+    background-color: hsl(234, 85%, 45%, 0.06);
+    color: hsla(234, 85%, 45%);
+}
+}
+@media (min-width: 1440px) {
+    .wrapper {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:auto
+    }
+    
+    .main-div {
+        background-color: white;
+        width: 85%;
+        height: 90%;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        margin: auto;
+        box-shadow: 2px 5px 30px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .card-div {
+        background-color: white;
+        width: 650px;
+        height: 53%;
+        border-radius: 40px 40px 40px 40px; 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 60px 2px  hsla(221, 100%, 96%, 1);
+         
+    }
+    .left-div{  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+        border-radius: 40px 40px 40px 40px ;  
+        background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+        width: 100%;
+        height: 100%;
+        color: #D4C3FF;
+    }
+    .circle-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px; 
+        width: 160px;
+        height: 160px;
+        border-radius: 80px;
+        background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0))
+    }
+
+.left-headtitle{
+    font-size: 1.1rem;
+    margin: 20px 0 25px 0;
+}
+.left-title{
+    font-size: 3rem;
+    color: white;
+    
+}
+.left-subtitle{
+    color: white;
+    margin-top: 30px;
+}
+
+.center-txt{
+    text-align: center;
+}
+
+.left-txt{
+    width: 75%;
+    margin-top: 15px;
+}
+
+
+.right-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+     color: #D4C3FF;
+    border-radius: 40px 40px 40px 40px; 
+    }
+
+.summary-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.right-title{
+    color: #36394A;
+    font-size: 1.2rem;
+    margin: 40px 0 25px 0;
+    text-align: left;
+    font-weight: 800;
+}
+
+.left{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 70px;
+}
+.detail-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.icon-margin{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.item{
+    display: flex;
+    width: 45%;
+    justify-content: flex-start;
+}
+
+.reaction{
+    background-color: hsla(0, 100%, 67%, 0.06);
+    color: hsl(0, 100%, 67%);
+}
+.memory{
+    background-color: hsla(39, 100%, 56%, 0.06);
+    color: hsl(39, 100%, 56%);
+}
+.verbal{
+    background-color: hsla(166, 100%, 37%, 0.06);
+    color: hsl(166, 100%, 37%);
+}
+.visual{
+    background-color: hsl(234, 85%, 45%, 0.06);
+    color: hsla(234, 85%, 45%);
+}
+}
